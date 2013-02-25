@@ -1,0 +1,22 @@
+Inject Detect
+
+Http proxy to detect malicious injections into your website.
+
+To learn more, read http://www.drunkenhacker.com/injection-detection/
+
+
+Requires Twisted
+# pip install twisted
+
+
+usage: InjectDetect [-h] -f TEST_URL_FILE [-w WHITELIST_FILE]
+
+Detect unwanted redirects on a website
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f TEST_URL_FILE, --test-url-file TEST_URL_FILE
+                        File with urls to redirect the browser to
+  -w WHITELIST_FILE, --whitelist-file WHITELIST_FILE
+                        Whitelisted urls that are allowed through the proxy
+
